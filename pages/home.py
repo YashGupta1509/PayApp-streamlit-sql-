@@ -242,13 +242,7 @@ try:
                 
                 st.pyplot(fig2,use_container_width=True)         
                     
-            fig2, ax2 = plt.subplots(figsize=(2,2))
-            current_time = datetime.datetime.now()
-            custom_cmap = mcolors.LinearSegmentedColormap.from_list("black", ["black", "green"])
-            july.month_plot(dates, data['3'],cmap=custom_cmap,month=current_time.month,fontsize=4,
-                                value_label=True,ax=ax2)
-            
-            st.pyplot(fig2,use_container_width=True)      
+               
 
 except AttributeError as e:
     print(e)
